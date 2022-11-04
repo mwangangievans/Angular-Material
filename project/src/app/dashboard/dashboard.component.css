@@ -1,0 +1,25 @@
+.page-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.page-header h1{
+    color: #6259CA;
+    font-size: larger;
+}
+.page-header button{
+    margin: 1rem;
+}
+.dashboard{
+    background-color: #EAEDF7;
+    margin: 1rem;
+    padding: 1rem;
+}
+.dashboard span{
+    color: #6259CA;
+    font-size: larger;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }

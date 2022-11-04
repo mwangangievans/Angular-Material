@@ -1,0 +1,14 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
+     <span routerLink="dashboard">Dashboard</span>
+    </mat-drawer>
+    <mat-toolbar>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu" (click)="drawer.toggle()"></mat-icon>
+
+        <!-- <span  >My Application</span> -->
+      </mat-toolbar>
+    <div >
+     <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>

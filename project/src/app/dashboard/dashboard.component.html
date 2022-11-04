@@ -1,10 +1,25 @@
 <div class="dashboard">
-    <mat-toolbar color="primary" >
-        <span>Welcome To Dashboard</span>
+   
+      <mat-card>
+        <div>
+            <span>
+                Welcome To Dashboard</span>
+        </div>
+      <div>
         <span class="example-spacer"></span>
-        <button mat-button>Basic</button>
-        <button mat-button>Basic</button>
-        <button mat-button color="primary">Basic</button>
-      </mat-toolbar>
+        <mat-card-content>
+        <button mat-button class="Import">Import</button>
+        <button mat-button class="Import">Filter</button>
+        <button mat-button class="Report">DownLoad Report</button>
+        </mat-card-content>
+      </div>
+        </mat-card>
+
+      <mat-grid-list cols="2" rowHeight="2:1">
+        
+       <mat-grid-tile>1</mat-grid-tile>
+        <mat-grid-tile>2</mat-grid-tile> 
+     
+      </mat-grid-list>
 </div>
 

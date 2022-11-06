@@ -11,6 +11,11 @@ import {MatIconModule} from '@angular/material/icon';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import { SelectCompComponent } from './select-comp/select-comp.component';
+import { MatListModule} from '@angular/material/list';
+import { MatListComponent } from './mat-list/mat-list.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatGridComponent } from './mat-grid/mat-grid.component';
 
 
 
@@ -20,7 +25,10 @@ import {MatCardModule} from '@angular/material/card';
   declarations: [
     AppComponent,
     SidenavComponent,
-    DashboardComponent
+    DashboardComponent,
+    SelectCompComponent,
+    MatListComponent,
+    MatGridComponent
   ],
   imports: [
     BrowserModule,
@@ -30,9 +38,9 @@ import {MatCardModule} from '@angular/material/card';
     MatToolbarModule,
     MatIconModule,
     MatGridListModule,
-   MatCardModule
-
-    
+    MatCardModule,
+    MatListModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

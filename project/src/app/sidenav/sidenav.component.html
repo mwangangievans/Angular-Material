@@ -1,6 +1,13 @@
 <mat-drawer-container class="example-container" autosize>
     <mat-drawer #drawer class="example-sidenav" mode="side" opened="true">
-     <span routerLink="dashboard">Dashboard</span>
+      <div fxlayout="column" class="w-full"> 
+    <mat-list class="text-red-600 cursor-pointer" >
+      <mat-list-item routerLink="dashboard">Dashboard</mat-list-item>
+      <mat-list-item routerLink="mat-list">mat-list</mat-list-item>
+      <mat-list-item routerLink="mat-grid">mat-grid</mat-list-item>
+    </mat-list>
+      </div>
+  
     </mat-drawer>
     <mat-toolbar>
         <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu" (click)="drawer.toggle()"></mat-icon>

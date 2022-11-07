@@ -19,4 +19,8 @@
   .example-sidenav span{
     color: #fff;
   }
-  
+  .mat-list-item{
+    color: red;
+    cursor: pointer;
+
+  }

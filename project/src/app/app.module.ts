@@ -16,7 +16,23 @@ import { MatListModule} from '@angular/material/list';
 import { MatListComponent } from './mat-list/mat-list.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatGridComponent } from './mat-grid/mat-grid.component';
-
+import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionComponent } from './mat-expansion/mat-expansion.component';
+import { MatAutocompleteComponent } from './mat-autocomplete/mat-autocomplete.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatSelectModule} from '@angular/material/select';
+import { MatCheckboxComponent } from './mat-checkbox/mat-checkbox.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatRadioModule} from '@angular/material/radio';
+import { MatDatepickerComponent } from './mat-datepicker/mat-datepicker.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatTooltipComponent } from './mat-tooltip/mat-tooltip.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackbarComponent } from './mat-snackbar/mat-snackbar.component';
 
 
 
@@ -28,7 +44,13 @@ import { MatGridComponent } from './mat-grid/mat-grid.component';
     DashboardComponent,
     SelectCompComponent,
     MatListComponent,
-    MatGridComponent
+    MatGridComponent,
+    MatExpansionComponent,
+    MatAutocompleteComponent,
+    MatCheckboxComponent,
+    MatDatepickerComponent,
+    MatTooltipComponent,
+    MatSnackbarComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +62,20 @@ import { MatGridComponent } from './mat-grid/mat-grid.component';
     MatGridListModule,
     MatCardModule,
     MatListModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatExpansionModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatAutocompleteModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatTooltipModule,
+    MatSnackBarModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

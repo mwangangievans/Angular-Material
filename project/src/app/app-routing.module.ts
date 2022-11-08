@@ -11,6 +11,7 @@ import { MatListComponent } from './mat-list/mat-list.component';
 import { MatSnackbarComponent } from './mat-snackbar/mat-snackbar.component';
 import { MatTooltipComponent } from './mat-tooltip/mat-tooltip.component';
 import { SelectCompComponent } from './select-comp/select-comp.component';
+import { TablesComponent } from './tables/tables.component';
 
 const routes: Routes = [
   {path:'dashboard',component:DashboardComponent},
@@ -23,6 +24,9 @@ const routes: Routes = [
   {path:'myDatePicker',component:MatDatepickerComponent},
   {path:'tooltip',component:MatTooltipComponent},
   {path:'snackbar',component:MatSnackbarComponent},
+  {path:'tables',component:TablesComponent},
+
+  
 
 
 

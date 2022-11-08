@@ -14,13 +14,15 @@
   .example-sidenav {
     width: 200px;
     padding: 20px;
-    background-color: #0E0E23;
+    background-color: #2E205D;
   }
   .example-sidenav span{
     color: #fff;
   }
   .mat-list-item{
-    color: red;
+    color: #fff;
     cursor: pointer;
-
+  }
+  .mat-grid-tile{
+    background-color: aqua;
   }

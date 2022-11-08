@@ -33,6 +33,10 @@ import { MatTooltipComponent } from './mat-tooltip/mat-tooltip.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatSnackbarComponent } from './mat-snackbar/mat-snackbar.component';
+import { TablesComponent } from './tables/tables.component';
+import {MatTableModule} from '@angular/material/table';
+import { FormsModule } from '@angular/forms';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 
 
@@ -50,7 +54,9 @@ import { MatSnackbarComponent } from './mat-snackbar/mat-snackbar.component';
     MatCheckboxComponent,
     MatDatepickerComponent,
     MatTooltipComponent,
-    MatSnackbarComponent
+    MatSnackbarComponent,
+    TablesComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -71,10 +77,12 @@ import { MatSnackbarComponent } from './mat-snackbar/mat-snackbar.component';
     MatCheckboxModule,
     MatRadioModule,
     MatDatepickerModule,
-    MatDatepickerModule,
     MatNativeDateModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatTableModule,
+    FormsModule,
+    MatPaginatorModule,
     
   ],
   providers: [],

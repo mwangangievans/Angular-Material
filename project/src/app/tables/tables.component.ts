@@ -1,3 +1,4 @@
+import { SelectionModel } from '@angular/cdk/collections';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { MatSelectChange } from '@angular/material/select';
@@ -53,7 +54,7 @@ export class TablesComponent implements OnInit {
   
                 
   ];
-  displayedColumns: string[] = ['id', 'firstname', 'lastname', 'email','gender', 'jobtitle','department'];
+  displayedColumns: string[] = ['select','id', 'firstname', 'lastname', 'email','gender', 'jobtitle','department'];
   
   dataSource = new MatTableDataSource(this.EmployeeData)
 
@@ -72,6 +73,22 @@ export class TablesComponent implements OnInit {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
+  selection = new SelectionModel<Employee>(true, []);
+
+    /** Whether the number of selected elements matches the total number of rows. */
+    isAllSelected() {
+      const numSelected = this.selection.selected.length;
+      const numRows = this.dataSource.data.length;
+      return numSelected === numRows;
+    }
+  
+    /** Selects all rows if they are not all selected; otherwise clear selection. */
+    masterToggle() {
+      this.isAllSelected() ?
+          this.selection.clear() :
+          this.dataSource.data.forEach(row => this.selection.select(row));
+    }
+
 
   applyFilter(event:Event){
     const filterValue = (event.target as HTMLInputElement).value;

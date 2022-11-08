@@ -4,9 +4,12 @@ table {
   }
  .table-div{
   margin: 3rem;
-  width: 100%;
+  width: 80%;
  } 
 
- .mat-form-field {
+ /* .mat-form-field {
   margin-right: 12px;
+} */
+mat-form-field{
+  width: 100%;
 }

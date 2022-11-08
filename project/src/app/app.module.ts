@@ -37,6 +37,7 @@ import { TablesComponent } from './tables/tables.component';
 import {MatTableModule} from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 
@@ -83,6 +84,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatTableModule,
     FormsModule,
     MatPaginatorModule,
+    MatSortModule
     
   ],
   providers: [],

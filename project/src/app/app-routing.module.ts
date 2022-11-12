@@ -6,6 +6,7 @@ import { MatAutocompleteComponent } from './mat-autocomplete/mat-autocomplete.co
 import { MatCheckboxComponent } from './mat-checkbox/mat-checkbox.component';
 import { MatDatepickerComponent } from './mat-datepicker/mat-datepicker.component';
 import { MatExpansionComponent } from './mat-expansion/mat-expansion.component';
+import { MatFormsComponent } from './mat-forms/mat-forms.component';
 import { MatGridComponent } from './mat-grid/mat-grid.component';
 import { MatListComponent } from './mat-list/mat-list.component';
 import { MatSnackbarComponent } from './mat-snackbar/mat-snackbar.component';
@@ -25,14 +26,8 @@ const routes: Routes = [
   {path:'tooltip',component:MatTooltipComponent},
   {path:'snackbar',component:MatSnackbarComponent},
   {path:'tables',component:TablesComponent},
+  {path:'forms',component:MatFormsComponent},
 
-  
-
-
-
-
-
-  
 ];
 
 @NgModule({

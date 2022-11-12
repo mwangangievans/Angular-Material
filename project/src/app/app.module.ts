@@ -35,9 +35,11 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { MatSnackbarComponent } from './mat-snackbar/mat-snackbar.component';
 import { TablesComponent } from './tables/tables.component';
 import {MatTableModule} from '@angular/material/table';
-import { FormsModule } from '@angular/forms';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { MatFormsComponent } from './mat-forms/mat-forms.component';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+
 
 
 
@@ -56,7 +58,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatDatepickerComponent,
     MatTooltipComponent,
     MatSnackbarComponent,
-    TablesComponent
+    TablesComponent,
+    MatFormsComponent
     
   ],
   imports: [
@@ -84,7 +87,8 @@ import { MatSortModule } from '@angular/material/sort';
     MatTableModule,
     FormsModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

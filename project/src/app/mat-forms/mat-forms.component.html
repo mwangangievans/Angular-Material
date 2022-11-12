@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-content>
+    <div class="main">
+      <p><b>Register Form
+      </b></p>
+      <form [formGroup]="signin_form" (ngSubmit)="submit()">
+     
+        <mat-form-field appearance="outline">
+          <mat-label>UserName</mat-label>
+          <input matInput formControlName="UserName" >
+          <mat-error *ngIf="signin_form.controls['UserName'].invalid">
+              <span *ngIf="signin_form.controls['UserName'].errors?.['required']">UserName is required</span>
+          </mat-error>
+      </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Email Address</mat-label>
+          <input matInput formControlName="email">
+          <mat-error *ngIf="signin_form.controls['email'].invalid">
+              <span *ngIf="signin_form.controls['email'].errors?.['required']">Email
+                  Address is required</span>
+              <span *ngIf="signin_form.controls['email'].errors?.['email']">Please enter a valid email
+                  address</span>
+          </mat-error>
+      </mat-form-field>
+       
+        <button mat-stroked-button color="primary" [disabled]="signin_form.invalid">Primary</button>
+
+      </form>
+  </div>
+  </mat-card-content>
+   
+   
+</mat-card>

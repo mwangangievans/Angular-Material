@@ -11,6 +11,8 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatCardModule} from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
+
 
 export const MaterialComponents = [
   MatToolbarModule,
@@ -25,7 +27,8 @@ export const MaterialComponents = [
   MatBadgeModule,
   MatCardModule,
   RouterModule,
-  MatListModule
+  MatListModule,
+  MatTableModule
 ];
 
 

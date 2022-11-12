@@ -8,21 +8,31 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { HttpClientModule,  } from '@angular/common/http';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { ShortenPipePipe } from './Pipes/shorten-pipe.pipe';
+import { NgxChartsModule }from '@swimlane/ngx-charts';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SideNavComponent,
-    DashboardComponent
+    DashboardComponent,
+    ShortenPipePipe
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    MatPaginatorModule,
+    NgxChartsModule,
+    BrowserAnimationsModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
